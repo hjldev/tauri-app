@@ -52,12 +52,7 @@ jobs:
 
       - run: npm install
 
-      - run: npm run build:web
-
-      - run: npm run lint
-        if: matrix.platform == 'ubuntu-latest'
-
-      - run: npm run test
+      - run: npm run build
 
       - name: Build
         uses: tauri-apps/tauri-action@b3f03835ca527e9735b386f1b1302ca70714b1e6
